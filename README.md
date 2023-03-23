@@ -39,7 +39,7 @@ Leave a ⭐️ If this project got you going!
 <br /><br /><br />
 
 ## Stack
-Built on the MERN Stack on the frontend and firebase for Authentication and Database storage.
+Built on the MERN Stack with `NodeJs` `ReactJs` `Express` `Styled-Components` `SocketIo` and `MongoDB` DB systems for Database Management and storage.
 
 
 ## Getting Started
