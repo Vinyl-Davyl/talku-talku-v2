@@ -64,7 +64,7 @@ Built on the MERN Stack with `NodeJs` `ReactJs` `Express` `Styled-Components` `S
 
 ## Author
 
-👤 **Vinyl Davyl**
+👤 **Vinyl Davyl** <br/>
 Leave a ⭐️ If this project got you going!
 - Website: https://vinyldavyl.netlify.app
 - Twitter: [@Vinylchi](https://twitter.com/Vinylchi)
