@@ -11,7 +11,7 @@ Ever wanted to communicate with friends in real-time and you worry about accessi
  
 Talku Talku is a Realtime private Chat Application that runs majorly on the web, might metamorphose into apps to run on other platforms. Its a minimalistic platform where users can come, join rooms with other frineds/users to talk about all kinds of chit chat with real time experience.
  
-### ✨ [Live Demo](https://soon.com)
+### ✨ [Live Demo]()
 
 
 ## Problems Talked Down on
