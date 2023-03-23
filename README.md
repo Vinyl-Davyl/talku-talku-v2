@@ -29,7 +29,6 @@ to name a few...
 
 
 
-
 ## Support is contiguous 
 
 Leave a ⭐️ If this project got you going!
@@ -42,25 +41,17 @@ Leave a ⭐️ If this project got you going!
 Built on the MERN Stack with `NodeJs` `ReactJs` `Express` `Styled-Components` `SocketIo` and `MongoDB` DB systems for Database Management and storage.
 
 
-## Getting Started
+## Features
+- [x] Users can register/login via username and password.
+- [x] Generate random avatars using [MultiAvatar](https://api.multiavatar.com/) API
+- [x] Emoji picker Integrated.
+- [x] Users can browse and skim through active users
+- [x] Cross-Platform Compatibile
 
-- First, Install the dependencies:
-
-```bash
-npm install
-# or
-yarn install
-```
-- Create a new project on FireBase and copy the product key and details
-- Paste the details in the `firbase.js` file in the project
-
-- Run the development server:
-
-```bash
-yarn start
-```
-
-Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
+ ### Update on more Features to come in V3
+- [ ] Full Migration to Typescript for scalability
+- [ ] Profile section where users can update their avatars with actual selected image
+- [ ] User should be abould to send photos and images while conversating 
 
 ## Author
 
