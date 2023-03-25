@@ -66,9 +66,8 @@ export default function Login() {
       }
     } 
     catch (err) {
-      console.log(err);
       setErr(true);
-      toast.error(err.response.data.msg, toastOptions);
+      toast.error("Something went wrong.", toastOptions);
     } finally {
       setLoading(false);
     }
