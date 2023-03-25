@@ -45,7 +45,7 @@ export default function Login() {
   const handleSubmit = async (event) => {
     setLoading(true);
     event.preventDefault();
-    // try {
+    try {
       if (validateForm()) {
         const { username, password } = values;
         const { data } = await axios.post(loginRoute, {
@@ -64,13 +64,13 @@ export default function Login() {
           navigate("/chat");
         }
       }
-    // } 
-    // catch (err) {
-    //   setErr(true);
-    //   toast.error("Something went wrong.", toastOptions);
-    // } finally {
-    //   setLoading(false);
-    // }
+    } 
+    catch (err) {
+      setErr(true);
+      toast.error("Something went wrong.", toastOptions);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
