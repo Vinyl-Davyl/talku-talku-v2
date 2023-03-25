@@ -11,7 +11,7 @@ import Spinner from "../components/Spinner";
 export default function Login() {
   const navigate = useNavigate();
   const [err, setErr] = useState(false);
-  //const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [values, setValues] = useState({ username: "", password: "" });
   const toastOptions = {
     position: "bottom-right",
@@ -43,9 +43,9 @@ export default function Login() {
   };
 
   const handleSubmit = async (event) => {
-    //setLoading(true);
+    setLoading(true);
     event.preventDefault();
-    // try {
+    try {
       if (validateForm()) {
         const { username, password } = values;
         const { data } = await axios.post(loginRoute, {
@@ -64,13 +64,13 @@ export default function Login() {
           navigate("/chat");
         }
       }
-    // } 
-    // catch (err) {
-    //   setErr(true);
-    //   toast.error("Something went wrong.", toastOptions);
-    // } finally {
-    //   setLoading(false);
-    // }
+    } 
+    catch (err) {
+      setErr(true);
+      toast.error("Something went wrong.", toastOptions);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -94,13 +94,12 @@ export default function Login() {
             name="password"
             onChange={(e) => handleChange(e)}
           />
-          <button type="submit">
-            {/* {loading ? (
+          <button type="submit" disabled={loading}>
+            {loading ? (
               <Spinner width="50px" height="50px" />
             ) : (
               "Log In"
-            )} */}
-            Log In
+            )}
           </button>
           <span>
             Don't have an account ? <Link to="/register">Create One.</Link>
