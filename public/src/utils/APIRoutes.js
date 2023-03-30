@@ -1,5 +1,5 @@
 export const host = process.env.NODE_ENV === "production"
-  ? "https://talku-talku-v2.vercel.app"
+  ? "https://talku-talku-v2-server.vercel.app"
   : "http://localhost:5000";
 
 export const loginRoute = `${host}/api/auth/login`;
