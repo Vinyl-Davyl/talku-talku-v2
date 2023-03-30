@@ -22,12 +22,6 @@ mongoose
     console.log(err.message);
   });
 
-  app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "http://localhost:3000", "https://talku-talku-v2.vercel.app", "https://talku-talku-v2-3stsevwfy-vinyl-davyl.vercel.app", "https://talku-talku-v2-server.vercel.app");
-    res.header("Content-Type", "application/json");
-    next();
-  });
-
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
@@ -37,8 +31,6 @@ const server = app.listen(process.env.PORT, () =>
 const io = socket(server, {
   cors: {
     origin: ["http://localhost:3000", "https://talku-talku-v2.vercel.app", "https://talku-talku-v2-3stsevwfy-vinyl-davyl.vercel.app", "https://talku-talku-v2-server.vercel.app"],
-    methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
-    allowedHeaders: ["talku-header"],
     credentials: true,
   },
 });
