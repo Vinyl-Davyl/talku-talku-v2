@@ -52,6 +52,7 @@ export default function SetAvatar() {
       }
     }
   };
+  
 
   useEffect(async () => {
     const data = [];
