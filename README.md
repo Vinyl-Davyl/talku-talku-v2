@@ -53,6 +53,7 @@ Built on the MERN Stack with `NodeJs` `ReactJs` `Express` `Styled-Components` `S
 - [ ] Profile section where users can update their avatars with actual selected image
 - [ ] User should be abould to send photos and images while conversating 
 - [ ] Users should be able to update already set profile image, after profile creation
+- [ ] UI Update
 
 ## Sneak Peek
 <img width="959" alt="Screenshot 2023-03-23 204014" src="https://user-images.githubusercontent.com/68241801/227333054-82e12095-7fab-4ba7-af97-60b199a9d378.png">
